@@ -1,0 +1,49 @@
+<%= form_for(@conjugation) do |f| %>
+  <% if @conjugation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@conjugation.errors.count, "error") %> prohibited this conjugation from being saved:</h2>
+
+      <ul>
+      <% @conjugation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :verb %><br />
+    <%= f.text_field :verb %>
+  </div>
+  <div class="field">
+    <%= f.label :tense %><br />
+    <%= f.text_field :tense %>
+  </div>
+  <div class="field">
+    <%= f.label :first_singular %><br />
+    <%= f.text_field :first_singular %>
+  </div>
+  <div class="field">
+    <%= f.label :second_singular %><br />
+    <%= f.text_field :second_singular %>
+  </div>
+  <div class="field">
+    <%= f.label :third_singular %><br />
+    <%= f.text_field :third_singular %>
+  </div>
+  <div class="field">
+    <%= f.label :first_plural %><br />
+    <%= f.text_field :first_plural %>
+  </div>
+  <div class="field">
+    <%= f.label :second_plural %><br />
+    <%= f.text_field :second_plural %>
+  </div>
+  <div class="field">
+    <%= f.label :third_plural %><br />
+    <%= f.text_field :third_plural %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

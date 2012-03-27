@@ -1,0 +1,4 @@
+--- 
+open_files: 
+  - app/models/conjugation.rb
+  - test/unit/conjugation_test.rb

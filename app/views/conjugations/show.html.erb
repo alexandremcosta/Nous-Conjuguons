@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Verb:</b>
+  <%= @conjugation.verb %>
+</p>
+
+<p>
+  <b>Tense:</b>
+  <%= @conjugation.tense %>
+</p>
+
+<p>
+  <b>First singular:</b>
+  <%= @conjugation.first_singular %>
+</p>
+
+<p>
+  <b>Second singular:</b>
+  <%= @conjugation.second_singular %>
+</p>
+
+<p>
+  <b>Third singular:</b>
+  <%= @conjugation.third_singular %>
+</p>
+
+<p>
+  <b>First plural:</b>
+  <%= @conjugation.first_plural %>
+</p>
+
+<p>
+  <b>Second plural:</b>
+  <%= @conjugation.second_plural %>
+</p>
+
+<p>
+  <b>Third plural:</b>
+  <%= @conjugation.third_plural %>
+</p>
+
+
+<%= link_to 'Edit', edit_conjugation_path(@conjugation) %> |
+<%= link_to 'Back', conjugations_path %>

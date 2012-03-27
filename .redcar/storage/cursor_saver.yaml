@@ -1,0 +1,15 @@
+--- 
+cursor_positions: 
+  - :path: app/controllers/conjugations_controller.rb
+    :cursor_offset: 212
+    :timestamp: 2012-03-27 05:16:57 +02:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2012-03-27 04:02:59 +02:00
+  - :path: app/models/conjugation.rb
+    :cursor_offset: 1010
+    :timestamp: 2012-03-27 19:52:41 +02:00
+  - :path: test/unit/conjugation_test.rb
+    :cursor_offset: 963
+    :timestamp: 2012-03-27 19:58:45 +02:00
+files_to_retain: 0

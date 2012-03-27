@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  verb: MyString
+  tense: MyString
+  first_singular: MyString
+  second_singular: MyString
+  third_singular: MyString
+  first_plural: MyString
+  second_plural: MyString
+  third_plural: MyString
+
+two:
+  verb: MyString
+  tense: MyString
+  first_singular: MyString
+  second_singular: MyString
+  third_singular: MyString
+  first_plural: MyString
+  second_plural: MyString
+  third_plural: MyString
