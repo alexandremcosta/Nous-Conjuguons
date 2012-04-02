@@ -4,6 +4,9 @@ Nousconjuguons03::Application.routes.draw do
   resources :conjugations
 
   match '/quiz/eval' => 'quiz#eval'
+
+  root :to => 'quiz#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
