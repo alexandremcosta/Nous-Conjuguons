@@ -3,6 +3,12 @@ require 'unicode_utils/downcase'
 class Conjugation < ActiveRecord::Base
   word_format = /\A[[:word:]]+[' ]?[[:word:]]*\z/
 
+  @person_fr = {first_singular: 'Je', second_singular: 'Tu', third_singular: 'Il',
+                first_plural: 'Nous', second_plural: 'Vous', third_plural: 'Ils'}
+  class << self
+    attr_reader :person_fr
+  end
+  
   before_validation :strip_and_downcase
   
   validates :verb, uniqueness: { scope: :tense, message: 'already has this tense'}
@@ -15,11 +21,20 @@ class Conjugation < ActiveRecord::Base
                       :first_plural, :second_plural, :third_plural, 
                       with: word_format,
                       message: 'accepts only characters, apostrophes and spaces'
+  def self.random
+    if count > 0
+      first(offset: rand(count))
+    else
+      nil
+    end
+  end
+
 
   private
   def strip_and_downcase
-    self.attributes.each do |attr, value|
-      if !value.nil? and (attr.match('verb') || attr.match('tense') || attr.match('singular') || attr.match('plural')) 
+    attributes.each do |attr, value|
+      if !value.nil? and (attr.match('verb') || attr.match('tense') || 
+                          attr.match('singular') || attr.match('plural')) 
         self[attr] = UnicodeUtils.downcase(value.strip)
       end
     end

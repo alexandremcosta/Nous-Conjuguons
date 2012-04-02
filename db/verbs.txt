@@ -1,0 +1,11 @@
+avoir, présent, ai, as, a, avons, avez, ont
+être, présent, suis, es, est, sommes, êtes, sont
+faire, présent, fais, fais, fait, faisons, faites, font
+aller, présent, vais, vas, va, allons, allez, vont
+venir, présent, viens, viens, vient, venons, venez, viennent
+manger, présent, mange, manges, mange, mangeons, mangez, mangent
+boire,  présent, bois, bois, boit, buvons, buvez, boivent
+appeler, présent, appelle, appelles, appelle, appelons, appelez, appellent
+prendre, présent, prends, prends, prend, prenons, prenez, prennent
+mettre, présent, mets, mets, met, mettons, mettez, mettent
+dormir, présent, dors, dors, dort, dormons, dormez, dorment
