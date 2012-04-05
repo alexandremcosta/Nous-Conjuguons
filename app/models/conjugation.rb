@@ -1,8 +1,10 @@
 require 'unicode_utils/downcase'
 
 class Conjugation < ActiveRecord::Base
-  word_format = /\A[[:word:]]+[' ]?[[:word:]]*\z/
+  default_scope :order => 'verb'
 
+  word_format = /\A[[:word:]]+[' ]?[[:word:]]*\z/
+  
   @person_fr = {first_singular: 'Je', second_singular: 'Tu', third_singular: 'Il',
                 first_plural: 'Nous', second_plural: 'Vous', third_plural: 'Ils'}
   class << self

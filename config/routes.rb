@@ -2,6 +2,7 @@ Nousconjuguons03::Application.routes.draw do
 
   match '/quiz' => 'quiz#index'
 
+  resources :conjugations
   root :to => 'quiz#index'
 
   # The priority is based upon order of creation:

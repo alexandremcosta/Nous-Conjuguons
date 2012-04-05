@@ -9,3 +9,14 @@ appeler, présent, appelle, appelles, appelle, appelons, appelez, appellent
 prendre, présent, prends, prends, prend, prenons, prenez, prennent
 mettre, présent, mets, mets, met, mettons, mettez, mettent
 dormir, présent, dors, dors, dort, dormons, dormez, dorment
+devoir, présent, dois, dois, doit, devons, devez, doivent
+vouloir, présent, veux, veux, veut, voulons, voulez, veulent
+pouvoir, présent, peux, peux, peut, pouvons, pouvez, peuvent
+mener, présent, mène, mènes, mène, menons, menez, mènent
+envoyer, présent, envoie, envoies, envoie, envoyons, envoyez, envoient
+payer, présent, paie, paies, paie, payons, payez, paient
+effacer, présent, efface, effaces, efface, effaçons, effacez, effacent
+placer, présent, place, places, place, plaçons, placez, placent
+jeter, présent, jette, jettes, jette, jetons, jetez, jettent
+espérer, présent, espère, espères, espère, espèrons, espèrez, espèrent
+acheter, présent, achète, achètes, achète, achetons, achetez, achètent

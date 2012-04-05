@@ -1,12 +1,18 @@
-<h1>Quiz</h1>
+<fieldset>
+<legend>Quiz</legend>
 <% if flash[:eval] == :correct %>
-  <p id='eval_correct'>Bien!</p>
+  <p id='correct_answer'>Bien!</p>
 <% elsif flash[:eval] == :incorrect %>
-  <p id='wrong_answer'>Mauvaise réponse! La bonne réponse est <span><%= flash[:answer] %></span></p>
+<p id='wrong_answer'>Mauvaise réponse!</br>La bonne réponse est <span><%= flash[:answer] %></span>.</p>
 <% end %>
-<%= form_tag(quiz_path) do %>
+<%= form_tag(quiz_path, name: 'form') do %>
   <p id='verb'><%= @conjugation.verb + " - " + @conjugation.tense %></p>
   <%= label_tag(:quiz_text_field, @person_pronoun) %>
-  <%= text_field_tag(:quiz_text_field) %>
-  <%= submit_tag("Conjuguer") %>
+  <%= text_field_tag(:quiz_text_field, nil, placeholder: 'réponse...', autocomplete: :off, maxlength: 20) %>
+  <%= submit_tag("Conjuguer", id: 'button') %>
 <% end %>
+</fieldset>
+
+<script type="text/javascript" language="JavaScript">
+document.forms['form'].elements['quiz_text_field'].focus();
+</script>
