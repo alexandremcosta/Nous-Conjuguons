@@ -1,22 +1,23 @@
 class QuizController < ApplicationController
-
   def index
-    @conjugation = Conjugation.random
-    @person_key = Conjugation.person_fr.keys.sample
-    @person_pronoun = Conjugation.person_fr[@person_key]
-    flash[:conjugation] = @conjugation
-    flash[:person] = @person_key
-  end
-
-  def eval
-    conjugation = flash[:conjugation]
-    person = flash[:person]
-    if params[:quiz_text_field] == conjugation[person]
-      flash[:eval] = :correct
+    debugger
+    if params[:quiz_text_field]
+      @conjugation = flash[:conjugation]
+      @person_key = flash[:person]
+      unless @conjugation[@person_key] == params[:quiz_text_field]
+        flash.keep
+        flash[:eval] = :incorrect
+        flash[:answer] = @conjugation[@person_key]
+        @person_pronoun = Conjugation.person_fr[@person_key]
+        return
+      else
+        flash[:eval] = :correct
+      end
     else
-      flash[:eval] = :incorrect
-      flash[:answer] = conjugation[person]
+      flash.clear
     end
-    redirect_to action: "index"
+    flash[:conjugation] = @conjugation = Conjugation.random
+    flash[:person] = @person_key = Conjugation.person_fr.keys.sample
+    @person_pronoun = Conjugation.person_fr[@person_key]
   end
 end

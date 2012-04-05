@@ -12,4 +12,10 @@ cursor_positions:
   - :path: test/unit/conjugation_test.rb
     :cursor_offset: 963
     :timestamp: 2012-03-27 19:58:45 +02:00
+  - :path: Gemfile
+    :cursor_offset: 156
+    :timestamp: 2012-04-05 15:04:15 +02:00
+  - :path: app/views/quiz/eval.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-03-29 18:05:32 +02:00
 files_to_retain: 0

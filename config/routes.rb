@@ -1,9 +1,6 @@
 Nousconjuguons03::Application.routes.draw do
 
-  resources :quiz
-  resources :conjugations
-
-  match '/quiz/eval' => 'quiz#eval'
+  match '/quiz' => 'quiz#index'
 
   root :to => 'quiz#index'
 

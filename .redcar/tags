@@ -1,4 +1,4 @@
-1332871126
+1333635715
 Application	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/config/application.rb	  class Application 
 ApplicationController	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/helpers/application_helper.rb	module ApplicationHelper
@@ -11,13 +11,20 @@ ConjugationsHelper	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/h
 ConjugationsHelperTest	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/test/unit/helpers/conjugations_helper_test.rb	class ConjugationsHelperTest 
 CreateConjugations	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/db/migrate/20120327031657_create_conjugations.rb	class CreateConjugations 
 Nousconjuguons03	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/config/application.rb	module Nousconjuguons03
+QuizController	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/quiz_controller.rb	class QuizController 
+QuizControllerTest	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/test/functional/quiz_controller_test.rb	class QuizControllerTest 
+QuizHelper	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/helpers/quiz_helper.rb	module QuizHelper
+QuizHelperTest	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/test/unit/helpers/quiz_helper_test.rb	class QuizHelperTest 
 TestCase	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/test/test_helper.rb	class ActiveSupport::TestCase
 change	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/db/migrate/20120327031657_create_conjugations.rb	  def change
 create	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/conjugations_controller.rb	  def create
 destroy	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/conjugations_controller.rb	  def destroy
 edit	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/conjugations_controller.rb	  def edit
 index	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/conjugations_controller.rb	  def index
+index	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/quiz_controller.rb	  def index
 new	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/conjugations_controller.rb	  def new
+person_fr	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/models/conjugation.rb	    attr_reader :person_fr
+random	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/models/conjugation.rb	  def self.random
 show	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/controllers/conjugations_controller.rb	  def show
 strip_and_downcase	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/app/models/conjugation.rb	  def strip_and_downcase
 test_homepage	/home/alexandre/Programming/Ruby/rails/nousconjuguons03/test/performance/browsing_test.rb	  def test_homepage

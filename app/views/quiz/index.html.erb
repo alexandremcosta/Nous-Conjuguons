@@ -4,7 +4,7 @@
 <% elsif flash[:eval] == :incorrect %>
   <p id='wrong_answer'>Mauvaise réponse! La bonne réponse est <span><%= flash[:answer] %></span></p>
 <% end %>
-<%= form_tag(:controller => "quiz", :action => "eval") do %>
+<%= form_tag(quiz_path) do %>
   <p id='verb'><%= @conjugation.verb + " - " + @conjugation.tense %></p>
   <%= label_tag(:quiz_text_field, @person_pronoun) %>
   <%= text_field_tag(:quiz_text_field) %>
