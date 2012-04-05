@@ -1,10 +1,12 @@
+require "unicode_utils/casefold"
+
 class QuizController < ApplicationController
   def index
     debugger
     if params[:quiz_text_field]
       @conjugation = flash[:conjugation]
       @person_key = flash[:person]
-      unless @conjugation[@person_key] == params[:quiz_text_field]
+      unless UnicodeUtils.casefold(@conjugation[@person_key]) == UnicodeUtils.casefold(params[:quiz_text_field])
         flash.keep
         flash[:eval] = :incorrect
         flash[:answer] = @conjugation[@person_key]
